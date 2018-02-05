@@ -10,14 +10,14 @@ namespace Classes2._0
     {
         static void Main(string[] args)
         {
-            List<Tafel> tafels = new List<Tafel>();
+            Tafel[] tafels = new Tafel[10];
             Random rndGen = new Random();
 
             for (var i = 0; i < 10; i++)
             {
                 var w = rndGen.Next(50, 200);
                 var h = rndGen.Next(50, 200);
-                tafels.Add(new Tafel(w, h));
+                tafels[i] = new Tafel(w, h);
             }
             foreach (var table in tafels)
             {
